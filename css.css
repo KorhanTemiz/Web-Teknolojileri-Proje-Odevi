@@ -1,0 +1,278 @@
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.navbar-boyut {
+  height: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d1bfbf;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+#resim {
+  margin-left: -50px;
+  margin-top: 100px;
+}
+body {
+  background-color: papayawhip;
+}
+#yazi {
+  margin-left: 420px;
+  margin-top: -305px;
+  text-align: justify;
+  width: 550px;
+}
+#kt {
+  margin-top: 100px;
+  margin-left: 400px;
+  text-align: justify;
+  color: burlywood;
+  width: 550px;
+}
+#resim2 {
+  margin-left: 950px;
+  margin-top: 25px;
+}
+#hobby {
+  margin-left: -50px;
+  margin-top: 0px;
+}
+#yazi2 {
+  margin-left: -1000px;
+  margin-top: -300px;
+  text-align: justify;
+  width: 950px;
+}
+
+#etkinlik {
+  text-align: justify;
+}
+.card {
+  background-color: bisque;
+}
+#resim3 {
+  margin-left: -50px;
+  margin-top: -30px;
+}
+#yazi3 {
+  margin-left: 420px;
+  margin-top: -250px;
+  text-align: justify;
+  width: 550px;
+}
+#kendim {
+  margin-left: 900px;
+  margin-top: 90px;
+}
+#içerik2 {
+  margin-top: -230px;
+  margin-left: 300px;
+}
+#kartHakkında {
+  margin-top: -250px;
+  margin-left: 1000px;
+}
+#kartHakkında1 {
+  margin-top: 200px;
+  margin-left: 1100px;
+}
+#içerik {
+  margin-top: 0px;
+}
+#kısaözethakkında {
+  margin-top: 50px;
+}
+#carouselExampleCaptions {
+  width: 500px;
+  height: 300px;
+  margin-left: 500px;
+}
+.slider {
+  position: relative;
+  width: 802px;
+  height: 500px;
+  border: 1px solid #ccc;
+  margin: auto;
+  overflow: hidden;
+}
+.slider-content {
+  position: absolute;
+  width: 500%;
+  left: 0;
+
+  animation: slide 25s infinite;
+}
+.slider-content:hover {
+  animation-play-state: paused;
+}
+.slider-item {
+  width: 20%;
+  float: left;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-800px);
+  }
+  20% {
+    transform: translateX(-800px);
+  }
+  30% {
+    transform: translateX(-1600px);
+  }
+  40% {
+    transform: translateX(-1600px);
+  }
+  50% {
+    transform: translateX(-2400px);
+  }
+  60% {
+    transform: translateX(-2400px);
+  }
+  70% {
+    transform: translateX(-3200px);
+  }
+  80% {
+    transform: translateX(-3200px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+}
+#amasyatanıtım {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#amasyaSayfa {
+  background-color: bisque;
+}
+#ac_kapa {
+  color: yellowgreen;
+}
+#birkutu {
+  background-color: navajowhite;
+  border-radius: 3%;
+}
+#ikikutu {
+  background-color: navajowhite;
+  border-radius: 3%;
+  width: auto;
+  height: auto;
+}
+.ıletisim {
+  background-color: white;
+  background-image: url(../images/iletişimarkaplan.jpg);
+}
+#butongönder {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#butontemizle {
+  margin-left: 175px;
+  margin-top: -38px;
+}
+.sectionIletisim {
+  margin-top: 110px;
+  width: 100%;
+  min-height: 500px;
+}
+#şehirslider {
+  margin-top: 120px;
+}
+.w-100 {
+  font-weight: 700;
+}
+.form-label {
+  font-weight: 700;
+}
+.kültürelmiras {
+  background-color: #ccc;
+  margin-top: 100px;
+  padding: 0;
+}
+#harita {
+  margin-left: 50px;
+  margin-top: 70px;
+}
+#contentamasyakalesi {
+  margin-top: 200px;
+  width: 1500px;
+}
+#amasyakaleresim {
+  margin-left: 275px;
+}
+#amasyakalesitanıtım {
+  font-size: medium;
+}
+.widget-title {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+#dörtkutu {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+#amasyakart {
+  background-color: darkgrey;
+}
+
+#baslik3 {
+  margin-top: 125px;
+
+  border-style: inset;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+  box-shadow: 10px 10px 10px rgb(54, 1, 1);
+}
+#paragraf {
+  text-indent: 40px;
+  text-align: left;
+}
+#kitapListesi td {
+  padding: 10px 10px;
+  border: 5px solid gray;
+  width: 75px;
+  height: 50px;
+}
+
+#album {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
