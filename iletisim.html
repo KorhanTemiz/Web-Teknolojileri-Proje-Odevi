@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="icon" href="resim/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--BOOTSTRAP CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\Win10\Desktop\Ders Notları\WEB TEKNOLOJİLİERİ\css\bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <title>İLETİŞİM</title>
+  </head>
+  <body class="ıletisim">
+    <div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a href="anasayfa.html" class="navbar-brand"
+          ><img
+            class="me-4 ms-4"
+            src="images/logo.png"
+            style="width: 60px"
+            alt="Logomuz"
+          />HOŞ GELDİNİZ</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#ac_kapa"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="ac_kapa"
+          class="collapse navbar-collapse justify-content-center"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="anasayfa.html" class="nav-link me-4 text-white"
+                >ANA SAYFA</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="özgeçmişim.html" class="nav-link me-4 text-white"
+                >ÖZGEÇMİŞ</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="ilgialanlarım.html" class="nav-link me-4 text-white"
+                >İLGİ ALANLARIM</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="şehrim.html" class="nav-link me-4 text-white">ŞEHRİM</a>
+            </li>
+            <li class="nav-item">
+              <a href="kültürelmiras.html" class="nav-link me-4 text-white"
+                >KÜLTÜREL MİRASIMIZ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="iletisim.html" class="nav-link me-4 text-white"
+                >İLETİŞİM</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link me-4 text-white">GİRİŞ YAP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function validate() {
+        var x = document.forms["myForm"]["ad"].value;
+        if (x == "") {
+          alert("İsim kısmı boş bırakılamaz..!");
+          return false;
+        }
+        var y = document.forms["myForm"]["soyad"].value;
+        if (y == "") {
+          alert("Soyisim kısmı boş bırakılamaz..!");
+          return false;
+        }
+        var z = document.forms["myForm"]["mail"].value;
+        if (z == "") {
+          alert("Mail Adresiniz Kısmı Boş Bırakılamaz..!");
+        }
+        var d = document.forms["myForm"]["message"].value;
+        if (d == "") {
+          alert("Lütfen mesajını yazar mısınız..?");
+        }
+      }
+      function ValidateEmail(inputText) {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (inputText.value.match(mailformat)) {
+          document.myForm.mail.focus();
+          return true;
+        } else {
+          alert("Geçersiz Mail Adresi");
+          document.myForm.mail.focus();
+          return false;
+        }
+      }
+    </script>
+    <section class="sectionIletisim">
+      <div class="container">
+        <form
+          action="görüntüle.html"
+          onsubmit="return validate();"
+          name="myForm"
+        >
+          <div class="w-25 mx-auto">
+            <div class="w-100 bg-danger p-2 text-white rounded-2 text-center">
+              <span>Bizimle İletişime Geçin</span>
+            </div>
+            <div clas="w-100">
+              <label class="form-label">Adınız:</label>
+              <input
+                type="text "
+                placeholder="Adınız "
+                class="form-control border border-info"
+                name="ad"
+                id="ad"
+              />
+            </div>
+            <div clas="w-100">
+              <label class="form-label">Soyadınız:</label>
+              <input
+                type="text "
+                placeholder=" Soyadınız"
+                class="form-control border border-info"
+                name="soyad"
+                id="soyad"
+              />
+            </div>
+            <div class="w-100 mail" onkeyup="check">
+              <label class="form-label">Mail Adresiniz:</label>
+              <input
+                type="text"
+                placeholder="Mail Adresiniz"
+                class="form-control border border-info"
+                name="mail"
+                id="mail"
+              />
+            </div>
+            <div class="w-100">
+              <label class="message">Mesajınız:</label>
+              <textarea
+                name="message"
+                class="form-control"
+                cols="30"
+                rows="10"
+                id="message"
+                placeholder="İletmek istediğiniz mesajınızı yazabilirsiniz..."
+              ></textarea>
+            </div>
+            <div
+              class="w-25"
+              id="butongönder"
+              onclick="ValidateEmail(document.myForm.mail)"
+            >
+              <button class="btn btn-danger" type="submit">GÖNDER</button>
+            </div>
+            <div class="w-25" id="butontemizle">
+              <button class="btn btn-danger" type="reset">TEMİZLE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
